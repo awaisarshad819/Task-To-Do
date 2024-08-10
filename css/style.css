@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(241, 243, 244);
+}
+.container{
+    width: 50vw;
+    min-height: 75vh;
+    margin-top: 15vmin;
+    background-color: white;
+    border: 1px solid rgb(241, 243, 244);
+    border-radius: 16px;
+    padding: 8px 16px;
+    margin-bottom: 10px;
+}
+.top{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.heading{
+    font-size: 1.125rem;
+    font-weight: 400;
+    padding: 8px 4px;
+}
+.add-task{
+    padding: 8px 4px;
+    font-size: 1rem;
+    color: #1a73e8;
+    pointer-events: auto;
+    
+}
+.add-task i{
+    padding-right: 10px;
+    
+}
+.display{
+    display: block;
+}
+.task{
+    display: flex;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.task-content{
+    text-align: left;
+    flex-grow: 1; /* Take up the remaining space */
+    white-space: nowrap; /* Prevent text from wrapping onto the next line */
+    overflow: hidden; /* Hide any text that overflows the container */
+    text-overflow: ellipsis;
+}
+.completed-radio {
+    margin-right: 10px; /* Space between the input and the text */
+}
+
+
+.task-remove {
+    margin-left: 10px; /* Space between the text and the icon */
+}
+.new-task{
+    padding-bottom: 5px;
+    display: none;
+}
+.new-task input{
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 10px;
+    outline: none   ;
+}
+.completed{
+    text-decoration: line-through;
+}
+
+h2{
+    display: block;
+}
+
+@media (max-width: 600px) {
+    .container{
+        width: 80vw;
+    }
+}
